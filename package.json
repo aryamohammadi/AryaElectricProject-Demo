@@ -1,0 +1,19 @@
+{
+  "name": "arya-electric-demo",
+  "version": "1.0.0",
+  "description": "Case study demonstration of electrical contractor website",
+  "private": false,
+  "scripts": {
+    "dev": "echo 'This is a demo repository. See README.md for details.'",
+    "build": "echo 'This is a demo repository. See README.md for details.'"
+  },
+  "keywords": [
+    "nextjs",
+    "react",
+    "case-study",
+    "web-development"
+  ],
+  "author": "",
+  "license": "MIT"
+}
+
