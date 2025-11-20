@@ -191,25 +191,25 @@ These files are provided to illustrate development approaches and should not be 
 ## Screenshots
 
 ### Homepage (Desktop)
-![Homepage Desktop View](screenshots/homepage-desktop.png)
+<img src="screenshots/homepage-desktop.png" alt="Homepage Desktop View" width="600" />
 
 ### Homepage (Mobile)
-![Homepage Mobile View](screenshots/homepage-mobile.png)
+<img src="screenshots/homepage-mobile.png" alt="Homepage Mobile View" width="300" />
 
 ### Quote Request Form
-![Quote Form Interface](screenshots/quote-form.png)
+<img src="screenshots/quote-form.png" alt="Quote Form Interface" width="600" />
 
 ### Portfolio Gallery
-![Portfolio Gallery with Modal](screenshots/portfolio-gallery.png)
+<img src="screenshots/portfolio-gallery.png" alt="Portfolio Gallery with Modal" width="600" />
 
 ### Services Page
-![Services Page with Category Toggle](screenshots/services-page.png)
+<img src="screenshots/services-page.png" alt="Services Page with Category Toggle" width="600" />
 
 ### Mobile Navigation
-![Mobile Navigation Menu](screenshots/mobile-nav.png)
+<img src="screenshots/mobile-nav.png" alt="Mobile Navigation Menu" width="300" />
 
 ### Footer
-![Footer Component](screenshots/footer.png)
+<img src="screenshots/footer.png" alt="Footer Component" width="600" />
 
 ## Important Note
 
