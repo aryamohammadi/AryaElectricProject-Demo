@@ -4,9 +4,11 @@ A case study documenting the development of a professional electrical contractor
 
 ## Project Overview
 
-This website was built for a licensed electrical contractor serving Orange County, California. The site provides an online presence for the business, allowing customers to view services, browse completed projects, and request free estimates through an integrated contact form.
+This website was built for a licensed electrical contracting business that serves both residential and commercial clients across Orange County, San Diego, Los Angeles, and Riverside counties. The site provides an online presence for the business, allowing customers to view all necessary business information and submit interest forms to request services.
 
-The website handles quote submissions through email and SMS notifications, displays customer reviews, and includes comprehensive SEO optimization for local search visibility. All functionality is built with a focus on mobile users, as they represent the majority of site traffic.
+The website facilitates client-business interaction by showcasing services, displaying completed projects, and enabling customers to request free estimates through an integrated contact form. The site handles quote submissions through email and SMS notifications, displays customer reviews, and includes comprehensive SEO optimization for local search visibility. All functionality is built with a focus on mobile users, as they represent the majority of site traffic.
+
+The main goal of the website is to showcase the business to potential clients and acquire leads from homeowners and businesses across the service areas.
 
 ## Key Features
 
@@ -32,7 +34,7 @@ Multiple contact methods are available including phone links, email forms, and d
 
 ## My Contributions
 
-I was responsible for the full-stack development of this project, including:
+I was the solo developer responsible for building this website from the ground up for my family business. My contributions included:
 
 - Frontend architecture and component structure using React and Next.js
 - API route development for handling form submissions and external service integrations
@@ -188,14 +190,26 @@ These files are provided to illustrate development approaches and should not be 
 
 ## Screenshots
 
-Screenshots will be added here showing:
+### Homepage (Desktop)
+![Homepage Desktop View](screenshots/homepage-desktop.png)
 
-- Homepage layout and hero section
-- Mobile responsive design examples
-- Quote form interface
-- Portfolio gallery with modal viewing
-- Service pages with category toggles
-- Navigation and footer components
+### Homepage (Mobile)
+![Homepage Mobile View](screenshots/homepage-mobile.png)
+
+### Quote Request Form
+![Quote Form Interface](screenshots/quote-form.png)
+
+### Portfolio Gallery
+![Portfolio Gallery with Modal](screenshots/portfolio-gallery.png)
+
+### Services Page
+![Services Page with Category Toggle](screenshots/services-page.png)
+
+### Mobile Navigation
+![Mobile Navigation Menu](screenshots/mobile-nav.png)
+
+### Footer
+![Footer Component](screenshots/footer.png)
 
 ## Important Note
 
