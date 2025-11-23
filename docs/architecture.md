@@ -39,16 +39,27 @@ The website is built as a single-page application using Next.js, which provides 
 
 ## Request Flow
 
-When a user submits a quote form:
+When a user submits a form:
 
 1. User fills out form in the browser
 2. Client-side validation runs before submission
 3. Form data is sent via POST request to `/api/quote`
-4. API route validates the data server-side
-5. API route sends email notification using Nodemailer
-6. Optional SMS notification sent via Twilio API
-7. Success response sent back to client
-8. User sees confirmation message
+4. API route validates the data server-side with comprehensive checks
+5. API route processes the request and integrates with external services
+6. Email notification sent to business using Nodemailer SMTP
+7. Optional SMS confirmation sent to customer via Twilio API
+8. Success response with appropriate status code sent back to client
+9. User sees confirmation message
+
+### API Route Processing
+
+Each API route follows a consistent pattern:
+- Parse and validate incoming request data
+- Perform server-side validation with appropriate error responses
+- Integrate with external services (email, SMS, APIs)
+- Handle errors gracefully with try-catch blocks
+- Return JSON responses with appropriate HTTP status codes
+- Log errors for debugging and monitoring
 
 ## Component Architecture
 
@@ -86,9 +97,19 @@ app/
   │   └── page.jsx       # About page
   ├── services/
   │   └── page.jsx       # Services page
-  └── api/
-      └── quote/
-          └── route.js    # API endpoint
+  └── api/                # API Routes (Server-side)
+      ├── quote/
+      │   └── route.js    # Quote submission handler
+      ├── sms-webhook/
+      │   └── route.js    # SMS webhook handler
+      ├── automated-followup/
+      │   └── route.js    # Automated follow-up system
+      ├── lead-scoring/
+      │   └── route.js    # Lead scoring algorithm
+      ├── google-reviews/
+      │   └── route.js    # Google Places API integration
+      └── og/
+          └── route.jsx   # Dynamic OG image generation
 
 components/
   ├── QuoteForm.jsx      # Form component
@@ -97,8 +118,33 @@ components/
 
 lib/
   ├── utils.js           # Utility functions
-  └── constants.js       # App constants
+  ├── constants.js       # Application constants
+  └── seo.js             # SEO utilities
+
+scripts/
+  ├── verify.js          # Verification scripts
+  ├── test-gmail.js      # Email testing
+  └── test-twilio.js     # SMS testing
 ```
+
+## API Architecture
+
+The application includes multiple API endpoints:
+
+- **Quote Processing**: Handles form submissions with validation, email notifications, and SMS confirmations
+- **SMS Webhook**: Processes incoming SMS replies from Twilio, sends email notifications, and provides automated responses
+- **Automated Follow-ups**: Sends scheduled messages based on time-based triggers
+- **Lead Scoring**: Analyzes leads and assigns priority scores using algorithmic analysis
+- **External API Integration**: Fetches data from Google Places API with response caching
+
+### Error Handling Strategy
+
+All API routes implement consistent error handling:
+- Try-catch blocks around async operations
+- Appropriate HTTP status codes (400, 500)
+- Error logging for debugging
+- Graceful degradation when external services fail
+- User-friendly error messages in responses
 
 ## Deployment Architecture
 
@@ -108,4 +154,5 @@ The site is deployed on Vercel, which provides:
 - Serverless function execution for API routes
 - Automatic SSL certificates
 - Environment variable management
+- Built-in analytics and monitoring
 
