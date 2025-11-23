@@ -105,15 +105,11 @@ API routes are organized in the `app/api/` directory following Next.js conventio
 
 ## Tech Stack
 
-### Frontend
-
-**Next.js 15.3.4** - Chose Next.js for its built-in routing, server-side rendering capabilities, and excellent performance optimizations. The App Router provides a clean way to organize pages and API routes.
-
-**React 19** - Used React for component-based development. The latest version includes performance improvements that help with rendering efficiency.
-
-**Tailwind CSS** - Selected Tailwind for rapid styling and consistent design. The utility-first approach makes it easy to maintain responsive layouts and ensures consistent spacing and colors.
-
 ### Backend
+
+**Next.js 15.3.4** - Framework with App Router for server-side rendering and API routes. Chose Next.js for its built-in routing, server-side rendering capabilities, and excellent performance optimizations.
+
+**Node.js** - Runtime environment for server-side JavaScript execution
 
 **Next.js API Routes** - All server-side logic runs through Next.js API routes. This keeps everything in one codebase and simplifies deployment.
 
@@ -121,11 +117,30 @@ API routes are organized in the `app/api/` directory following Next.js conventio
 
 **Twilio** - Integrated for SMS notifications. Provides a reliable way to send text messages when new quotes are submitted.
 
+### Third-Party Services
+
+**Google Places API** - External API integration for fetching business reviews and ratings
+
+**Vercel Analytics** - Website analytics and monitoring
+
+**Vercel Speed Insights** - Performance monitoring
+
+### Frontend
+
+**React 19** - Used React for component-based development. The latest version includes performance improvements that help with rendering efficiency.
+
+**Tailwind CSS 4** - Selected Tailwind for rapid styling and consistent design. The utility-first approach makes it easy to maintain responsive layouts and ensures consistent spacing and colors.
+
+**Radix UI** - Accessible UI component primitives for building interactive elements
+
+**Lucide React** - Icon library for consistent iconography
+
 ### Development Tools
 
 **ESLint** - Code quality and consistency checking
 **Playwright** - End-to-end testing for critical user flows
-**axe-core** - Automated accessibility testing
+**Cheerio** - Server-side HTML parsing for verification scripts
+**TypeScript** - Type checking and development tooling
 
 ## API Endpoints
 
